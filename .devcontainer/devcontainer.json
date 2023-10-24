@@ -1,7 +1,8 @@
 {
   "name": "Compatibowl Docs",
   "build": {
-		"dockerfile": "Dockerfile"
-	},
-  "service": "app"
+	"dockerfile": "Dockerfile"
+  },
+  "service": "app",
+  "remoteUser": "vscode"
 }
