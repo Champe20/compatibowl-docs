@@ -1,0 +1,7 @@
+{
+  "name": "Compatibowl Docs",
+  "build": {
+		"dockerfile": "Dockerfile"
+	},
+  "service": "app"
+}
