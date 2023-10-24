@@ -2,7 +2,6 @@ FROM ubuntu:latest
 RUN apt update && apt -y upgrade
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends python3-pip git
-RUN pip install --break-system-packages mkdocs-material
 
 # Add vscode user
 ARG USERNAME=user-vscode
@@ -25,3 +24,4 @@ RUN groupadd --gid $USER_GID $USERNAME \
 
 # [Optional] Set the default user. Omit if you want to keep the default as root.
 USER $USERNAME
+RUN pip install mkdocs-material
