@@ -1,3 +1,7 @@
 site_name: Compatibowl
 theme:
   name: material
+  logo: assets/logo.png
+  palette:
+    scheme: slate
+    primary: blue grey
