@@ -1,6 +1,8 @@
 {
     "name": "MkDocs-VSCode",
-    "image": "python:3.9.18-bookworm",
+    "build": {
+		"dockerfile": "Dockerfile"
+	},
 
     // Set *default* container specific settings.json values on container create.
     "settings": {
