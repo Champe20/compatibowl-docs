@@ -1,4 +1,7 @@
 # Windows
+
+Windows support is courtesy of [cassowary](https://github.com/casualsnek/cassowarys).
+
 Before you set up windows, you will need to make QEMU run as non-root. To do this, use the preconfigured just runner by running `just qemu-non-root`. Then you can follow below excerpt from [cassowary](https://github.com/casualsnek/cassowary):
 ### Download Windows .iso image and VirtIO Drivers for Windows
 
@@ -103,7 +106,7 @@ with:
 ## On Windows (guest)
 
 - Open Settings, click on System, scroll to bottom and click on Remote desktop then click on Enable Remote Desktop and click confirm!
-- Open this page and download latest .zip from the [release page](https://github.com/casualsnek/cassowary/releases/)
+- Open this page and download latest .zip from the [cassowary release page](https://github.com/casualsnek/cassowary/releases/)
 - Extract the downloaded .zip file
 - Double click on `setup.bat` located on extracted directory
 - Logout and login again to windows session
@@ -113,7 +116,7 @@ with:
 
 Here we will be using Arch Linux. You can easily find equivalent commands for your Linux distro.
 
-- Go to the [release page](https://github.com/casualsnek/cassowary/releases/) and download latest `.whl`;  
+- Go to the [cassowary release page](https://github.com/casualsnek/cassowary/releases/) and download latest `.whl`;  
 - Open terminal on the location where you downloaded the `.whl` file;  
 - Install `python3`, `python3-pip`, `freerdp2`, `libvirt-python3` packages and dependencies by running following commands on terminal:
 
@@ -151,3 +154,5 @@ You can explore other commandline usage of cassowary by running:
 
 ```bash
 $ python -m cassowary -h
+```
+For advanced configuration or FAQ, check the [configuration page of cassowary](https://github.com/casualsnek/cassowary/blob/main/docs/3-faq.md).
