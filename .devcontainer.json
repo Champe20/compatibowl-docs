@@ -1,6 +1,6 @@
 {
     "name": "MkDocs-VSCode",
-    "image": "python:3.11.4-slim-buster",
+    "image": "python:3.9.18-bookworm",
 
     // Set *default* container specific settings.json values on container create.
     "settings": {
@@ -21,8 +21,8 @@
     "forwardPorts": [8000],
 
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "pip3 install -r requirements.txt"
+    "postCreateCommand": "pip install mkdocs-material && apt install git",
 
     // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-    //"remoteUser": "vscode"
+    "remoteUser": "vscode"
 }
