@@ -1,7 +1,7 @@
 FROM python:3.9.18-bookworm
 RUN apt update && apt upgrade -y \
     && apt -y install git
-ARG vscode
+ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
@@ -20,4 +20,4 @@ RUN groupadd --gid $USER_GID $USERNAME \
 # ********************************************************
 
 # [Optional] Set the default user. Omit if you want to keep the default as root.
-# USER $USERNAME
+USER $USERNAME
