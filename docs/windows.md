@@ -2,6 +2,8 @@
 
 Windows support is courtesy of [cassowary](https://github.com/casualsnek/cassowarys).
 
+Before setting up Windows, check to see if the apps you need are supported by wine at [WineHQ AppDB](https://appdb.winehq.org/). If they are listed as supported, you should set them up with [Bottles](https://usebottles.com/).
+
 Before you set up windows, you will need to make QEMU run as non-root. To do this, use the preconfigured just runner by running `just qemu-non-root`. Then you can follow below excerpt from [cassowary](https://github.com/casualsnek/cassowary):
 ### Download Windows .iso image and VirtIO Drivers for Windows
 
