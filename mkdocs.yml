@@ -2,6 +2,7 @@ site_name: Compatibowl
 theme:
   name: material
   logo: assets/logo.png
+  favicon: assets/compatibowl-favicon.jpeg
   icon:
     repo: fontawesome/brands/github
   palette:
