@@ -2,7 +2,10 @@ site_name: Compatibowl
 theme:
   name: material
   logo: assets/logo.png
+  icon:
+    repo: fontawesome/brands/github
   palette:
     scheme: slate
     primary: blue grey
 repo_url: https://github.com/Champe20/Compatibowl
+repo_name: Champe20/Compatibowl
