@@ -16,7 +16,7 @@
             "yzhang.markdown-all-in-one",
             "redhat.vscode-yaml",
             "shardulm94.trailing-spaces",
-            "oderwat.indent-rainbow",
+            "oderwat.indent-rainbow"
         ]
     },
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
