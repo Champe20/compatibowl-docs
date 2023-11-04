@@ -17,22 +17,12 @@ Notably:
 
     We are aware of an issue where booting from the ISO with Ventoy leads to a black screen with a cursor and nothing happening. This is due to an upstream bug with Anaconda and the way Ventoy sets up loop mounts. We are preparing a workaround to enable this workflow. In the meantime, please do not create a new issue on GitHub. You can react with a thumbs up on this [issue](https://github.com/ublue-os/main/issues/108) so we can track how many people want this feature.
 
-Each Universal Blue image can be installed from the boot menu of the installation ISO. If you're using an existing Fedora Silverblue/Kinoite system check out the [image page](/images) for rebasing information (you don't need to reinstall).
-
 For new systems, follow the instructions below:
 
-[Download the ISO :fontawesome-solid-heart:](https://github.com/ublue-os/main/releases){ .md-button .md-button--primary }
+[Download the ISO :fontawesome-solid-heart:](https://github.com/Champe20/Compatibowl/releases){ .md-button .md-button--primary }
 
 1. Use the [Fedora Media Writer](https://flathub.org/apps/details/org.fedoraproject.MediaWriter) to write the ISO to a USB stick.
     Mac and Windows users can [download it here](https://getfedora.org/en/workstation/download/). Or use a tool of your choice.
-
-2. Select the image you want to install from the boot menu. The `main` images will work on systems with Intel and AMD GPUs, and the images tagged with `nvidia` include the proper drivers:
-    ![installer](https://user-images.githubusercontent.com/1264109/230446211-a0c4b2e8-2d31-44cb-9179-202f4b9fc52d.png)
-    ![installer2](https://user-images.githubusercontent.com/1264109/230446224-ae43322f-9e4d-4a17-8133-a8bf6def3e64.png)
-
-    !!! Info "Disk check"
-
-        The installer will do an integrity check after you've made a selection, this is normal but can be skipped by hitting Escape. The disk detection step might also take longer than expected.
 
 3. If you are familiar with Anaconda there are a few changes you might notice:
 
@@ -77,12 +67,6 @@ The installer uses a default password for MOK enrollment: **ublue-os**
 
 !!! Warning
     If you use `secureboot` and do not enroll the MOK, you will boot to a blank screen, as nouveau has been disabled since nvidia drivers were installed but unable to load without the MOK.
-
-## Video Overview
-
-This video goes over what installation should look like, but, note, the video refers to multiple ISOs. There is now just one ISO image used to boot. The rest of the installation looks the same as the video.
-
-![type:video](https://www.youtube.com/embed/SaPxDJtjoB8)
 
 ## Reporting Issues
 
