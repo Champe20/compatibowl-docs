@@ -1,0 +1,812 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../macOS/">
+      
+      
+        <link rel="next" href="../package-management/">
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Windows - Compatibowl</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="yellow">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#windows" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Compatibowl" class="md-header__button md-logo" aria-label="Compatibowl" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Compatibowl
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Windows
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Champe20/Compatibowl" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Champe20/Compatibowl
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../android/" class="md-tabs__link">
+          
+  
+  Operating Systems
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../package-management/" class="md-tabs__link">
+        
+  
+    
+  
+  Installing Linux Software
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../installation/" class="md-tabs__link">
+        
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Compatibowl" class="md-nav__button md-logo" aria-label="Compatibowl" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Compatibowl
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Champe20/Compatibowl" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Champe20/Compatibowl
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Operating Systems
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Operating Systems
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../android/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macOS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MacOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Windows
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Windows
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-windows-iso-image-and-virtio-drivers-for-windows" class="md-nav__link">
+    Download Windows .iso image and VirtIO Drivers for Windows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-virtual-machine" class="md-nav__link">
+    Creating a Virtual Machine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-windows-guest" class="md-nav__link">
+    On Windows (guest)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-linux-host" class="md-nav__link">
+    On Linux (host)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../package-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing Linux Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-windows-iso-image-and-virtio-drivers-for-windows" class="md-nav__link">
+    Download Windows .iso image and VirtIO Drivers for Windows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-virtual-machine" class="md-nav__link">
+    Creating a Virtual Machine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-windows-guest" class="md-nav__link">
+    On Windows (guest)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-linux-host" class="md-nav__link">
+    On Linux (host)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="windows">Windows</h1>
+<p>Windows support is courtesy of <a href="https://github.com/casualsnek/cassowarys">cassowary</a>.</p>
+<p>Before setting up Windows, check to see if the apps you need are supported by wine at <a href="https://appdb.winehq.org/">WineHQ AppDB</a>. If they are listed as supported, you should set them up with <a href="https://usebottles.com/">Bottles</a>.</p>
+<p>Before you set up windows, you will need to make QEMU run as non-root. To do this, use the preconfigured just runner by running <code>just qemu-non-root</code>. Then you can follow below excerpt from <a href="https://github.com/casualsnek/cassowary">cassowary</a>:</p>
+<h3 id="download-windows-iso-image-and-virtio-drivers-for-windows">Download Windows .iso image and VirtIO Drivers for Windows</h3>
+<p>We will need either Windows 7, 8, or 10 Pro, Enterprise or Server to use RDP apps.<br />
+VirtIO driver will improve the VM performance while having lowest overhead.</p>
+<ul>
+<li>
+<p>Download Windows <a href="https://www.microsoft.com/en-us/software-download/windows10">10</a> or <a href="https://www.microsoft.com/software-download/windows11">11</a>.</p>
+</li>
+<li>
+<p>Download latest VirtIO driver iso images from: <a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso">HERE</a></p>
+</li>
+</ul>
+<p>and save them in a convenient location.</p>
+<h3 id="creating-a-virtual-machine">Creating a Virtual Machine</h3>
+<ul>
+<li>
+<p>Open virt-manager from your application menu</p>
+</li>
+<li>
+<p>On virt-manager click on <strong>Edit</strong> -&gt; <strong>Preferences</strong>, check <strong>Enable XML editing</strong> then click Close;  </p>
+</li>
+</ul>
+<p><img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-0.png" alt="virt-manager-0"></p>
+<ul>
+<li>
+<p>From virt-manager menu bar select <strong>File</strong> and then <strong>New Virtual Machine</strong>;</p>
+</li>
+<li>
+<p>On the New VM window select <strong>Local Install media</strong> and click Next;  </p>
+</li>
+</ul>
+<p><img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-1.png" alt="virt-manager-1"></p>
+<ul>
+<li>
+<p>Browse and select the Windows 10 iso you downloaded on install media then click Next again;</p>
+</li>
+<li>
+<p>Set the CPU cores (2 recommended), Memory (4096 MB recommended) and Disk Space as per your preferences;  </p>
+</li>
+</ul>
+<p><img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-2.png" alt="virt-manager-2">
+  <img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-3.png" alt="virt-manager-3"></p>
+<ul>
+<li>Give a name to your vm such as <code>Win10</code> and check <strong>Customize configuration before install</strong> then click on Finish!;  </li>
+</ul>
+<p><img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-4.png" alt="virt-manager-4"></p>
+<ul>
+<li>In the CPU tab make sure <strong>Copy host configuration</strong> is checked;  </li>
+</ul>
+<p><img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-5.png" alt="virt-manager-5"></p>
+<ul>
+<li>Goto XML tab of CPU and replace the section:</li>
+</ul>
+<pre><code class="language-xml">&lt;clock offset=&quot;localtime&quot;&gt;
+    .......
+    .......
+&lt;/clock&gt;
+</code></pre>
+<p>with:</p>
+<pre><code class="language-xml">&lt;clock offset=&quot;localtime&quot;&gt;
+  &lt;timer name=&quot;hpet&quot; present=&quot;yes&quot;/&gt;
+  &lt;timer name=&quot;hypervclock&quot; present=&quot;yes&quot;/&gt;
+&lt;/clock&gt;
+</code></pre>
+<ul>
+<li>In the Memory tab set the <strong>Current allocation</strong> to <strong>1024</strong>, so the VM won't use 4GiB of memory directly but it will range from 1GiB to 4GiB;  </li>
+</ul>
+<p><img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-6.png" alt="virt-manager-6"></p>
+<ul>
+<li>
+<p>In the Boot Options tab you could check <strong>Start the virtual machine on host bootup</strong> if you would like the VM to boot automatically at your PC boot;</p>
+</li>
+<li>
+<p>In the SATA Disk 1 tab set the <strong>Disk bus</strong> to <strong>VirtIO</strong>;  </p>
+</li>
+</ul>
+<blockquote>
+<p>If you are using Windows 7 skip this step as VirtIO is not supported.</p>
+</blockquote>
+<p><img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-7.png" alt="virt-manager-7"></p>
+<ul>
+<li>Move over to NIC section and set <strong>Device model</strong> to <strong>virtio</strong>;  </li>
+</ul>
+<p><img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-8.png" alt="virt-manager-8"></p>
+<ul>
+<li>Click on <strong>Add hardware</strong> at the bottom left, select <strong>Storage</strong> then choose <strong>Select or Create custom storage</strong>; click on <strong>Manage</strong>, browse and select the downloaded virtio-win driver iso. Finally set the device type to <strong>CDROM</strong> and click on Finish;  </li>
+</ul>
+<p><img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-9.png" alt="virt-manager-9"></p>
+<ul>
+<li>
+<p>Click <strong>Begin Installation</strong> on top left;</p>
+</li>
+<li>
+<p>Follow the installation instructions for Windows 10 and when choosing a Custom installation you will get no drives to install Windows 10 on. To make the VirtIO drive works you will have to click on <strong>Load Driver</strong>, then choose <strong>OK</strong> and finally select the driver for Windows 10;</p>
+</li>
+</ul>
+<blockquote>
+<p>If no drivers are loaded or shown, let Windows search for them inside the <code>amd64</code> folder of the VirtIO disk.</p>
+</blockquote>
+<p><img src="https://github.com/casualsnek/cassowary/raw/main/docs/img/virt-manager-10.png" alt="virt-manager-10"></p>
+<ul>
+<li>After that your drive will show and you can continue like a normal Windows 10 installation;</li>
+<li>After some time you will get to "Let's connect to internet page", click on <strong>I don't have internet</strong> at bottom left and continue with limited setup;</li>
+<li>Set your username and password. The Password is not allowed to be blank;</li>
+<li>After you get to Windows 10 desktop open This PC and browse to virtio-win CD drive and install <strong>virtio-win-gt-x64.exe</strong>;</li>
+<li>It's also suggested to install the <a href="https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe">spice guest tools</a> to also enable copy-paste between host and guest;</li>
+<li>Shut down the VM and from the menubar select <strong>View</strong> and then <strong>Details</strong>;</li>
+<li>Go to Display Spice section and set <strong>Listen Type</strong> to <strong>None</strong>; also check the OpenGL option and click Apply;</li>
+<li>Go to Video QXL section and set <strong>Model</strong> to <strong>VirtIO</strong> and check the 3D acceleration option;</li>
+</ul>
+<blockquote>
+<p>If you get a black screen after those changes, revert those changes. This could happen with nvidia graphics card;</p>
+</blockquote>
+<ul>
+<li>Start the VM by clicking the play button on the top left (you may need to click the Monitor icon to show the VM screen ). Login to desktop;</li>
+<li>Open up edge and browse to this page and continue the instructions for installing cassowary.</li>
+</ul>
+<h2 id="on-windows-guest">On Windows (guest)</h2>
+<ul>
+<li>Open Settings, click on System, scroll to bottom and click on Remote desktop then click on Enable Remote Desktop and click confirm!</li>
+<li>Open this page and download latest .zip from the <a href="https://github.com/casualsnek/cassowary/releases/">cassowary release page</a></li>
+<li>Extract the downloaded .zip file</li>
+<li>Double click on <code>setup.bat</code> located on extracted directory</li>
+<li>Logout and login again to windows session</li>
+<li>After you have logged in continue the instructions below</li>
+</ul>
+<h2 id="on-linux-host">On Linux (host)</h2>
+<p>Here we will be using Arch Linux. You can easily find equivalent commands for your Linux distro.</p>
+<ul>
+<li>Go to the <a href="https://github.com/casualsnek/cassowary/releases/">cassowary release page</a> and download latest <code>.whl</code>;  </li>
+<li>Open terminal on the location where you downloaded the <code>.whl</code> file;  </li>
+<li>Install <code>python3</code>, <code>python3-pip</code>, <code>freerdp2</code>, <code>libvirt-python3</code> packages and dependencies by running following commands on terminal:</li>
+</ul>
+<pre><code class="language-bash">$ sudo pacman -S python3 python3-pip freerdp libvirt-python
+$ pip3 install PyQt5
+</code></pre>
+<ul>
+<li>Install the downloaded <code>.whl</code> file by running:</li>
+</ul>
+<pre><code class="language-bash">$ pip install cassowary*
+</code></pre>
+<blockquote>
+<p>If you get any warning about the folder <code>/home/$USER/.local/bin</code> not in your PATH, you can easily add it by adding it to your <code>$HOME/.profile</code> or <code>$HOME/.bash_profile</code>:</p>
+<p><code>echo "PATH=\$PATH:$HOME/.local/bin" &gt;&gt; $HOME/.profile</code></p>
+</blockquote>
+<ul>
+<li>Launch cassowary configuration utility with:</li>
+</ul>
+<pre><code class="language-bash">$ python3 -m cassowary -a
+</code></pre>
+<ul>
+<li>Head over to Misc tab and click on <strong>"Setup Autostart"</strong> and <strong>"Create"</strong>. This will bring cassowary to your application menu and setup background service autostart;</li>
+<li>Enter the VM name from the VM setup step; in this case <code>Win10</code>;</li>
+<li>Click on "Save changes" and then on <strong>"Autodetect"</strong>, this should automatically fill up the VM IP;</li>
+<li>Click "Save changes" again then click <strong>"Autofill host/username"</strong> then enter the password you set during the windows setup. Then click "Save changes" again;</li>
+<li>Now goto <strong>"Guest app"</strong> tab and create shortcut for any application you want.</li>
+</ul>
+<p>Now you can find application on your application menu which you can use to launch apps easily
+You can explore other commandline usage of cassowary by running:</p>
+<pre><code class="language-bash">$ python -m cassowary -h
+</code></pre>
+<p>For advanced configuration or FAQ, check the <a href="https://github.com/casualsnek/cassowary/blob/main/docs/3-faq.md">configuration page of cassowary</a>.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>
